@@ -21,16 +21,16 @@ site:
   name:
     # 显示类型 （i_class/text/img）
     # Display type (i_class/text/img)
-    class: img
+    class: text
     # 具体内容 例如：solitude st-logo / Efu / /img/logo.png
     # Specific content, for example: solitude st-logo / Efu / /img/logo.png
-    custom: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog/avatar/di-avatar.png
+    custom: GrayDi
   # 网页icon
   # Web icon
-  siteIcon: /img/logo.png
+  siteIcon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog/avatar/di-avatar.png
   # 页脚的Logo、加载动画默认的logo
   # Logo in the footer, default logo for loading animation
-  icon: /img/logo.png
+  icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog/avatar/di-avatar.png
 
 # 导航栏
 # NavBar
@@ -44,6 +44,13 @@ nav:
   # 中心菜单
   # center menu
   menu:
+    首页: /
+    文章:
+      列表: /archives/ || st-folder-fill
+      分类: /categories/ || st-checkbox-multiple-blank-fill
+      标签: /tags/ || st-price-tag-fill
+    关于:
+      关于本站: /about/ || st-contacts-fill
     # 首页: / # 显示名称：路径 / Display name: path
     # 文库: # 显示名称 / Display name
     #   文章列表: /archives/ || st-folder-fill # 子菜单名称：路径 || 图标 / Submenu name: path || icon
@@ -63,8 +70,8 @@ nav:
   # 右侧按钮
   # Button on the right
   right:
-    random: false # 随机文章跳转 / random post button
-    console: false #控制台 / console
+    random: true # 随机文章跳转 / random post button
+    console: true #控制台 / console
     # 自定义按钮
     # custom button
     # 左至右
@@ -79,45 +86,69 @@ nav:
 # 首页顶部样式
 # Home top style
 hometop:
-  enable: false # 是否打开 / if enable
+  enable: true # 是否打开 / if enable
   # banner display
   banner:
     # 左上角显示大文字
     # Large text displayed in the upper left corner
     # tip：可使用html标签
     # tip: html tags be used
-    title: 宁静致远<br>热爱生活
+    title: 技术博客 &<br>随便记录
     # 左上角显示小文字
     # Small text displayed in the upper left corner
-    url: Hexo Theme Solitude
+    url: 最初可能只是一个技术博客
     # 轮播icon
     # Carousel icon
     # tip: 76x76 size
     icon:
-      # HTML: # 名字 / Name
-      #   img: https://7.isyangs.cn/34/65f2e42921677-34.png # 图片 / Image
-      #   color: "#e9572b" # 背景色 / Background color
-      # JS:
-      #   img: https://7.isyangs.cn/34/65f2e43ceddda-34.png
-      #   color: "#f7cb4f"
-      # Docker:
-      #   img: https://7.isyangs.cn/34/65f2e45462045-34.png
-      #   color: "#57b6e6"
-      # Flutter:
-      #   img: https://7.isyangs.cn/34/65f2e47acbe98-34.png
+      Vue:
+        img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/Vue.png
+        color: "#ffffff"
+      React:
+        img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/React.png
+        color: "#212121"
+      HTML: # 名字 / Name
+        img: https://7.isyangs.cn/34/65f2e42921677-34.png # 图片 / Image
+        color: "#e9572b" # 背景色 / Background color
+      CSS:
+        img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/css.png
+        color: "#ffffff"
+      Less:
+        img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/less.png
+        color: "#1D365D"
+      JS:
+        img: https://7.isyangs.cn/34/65f2e43ceddda-34.png
+        color: "#f7cb4f"
+      TS:
+        img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/typescript.png
+        color: "#3074C0"
+      # Pug:
+      #   img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/pug.png
       #   color: "#ffffff"
-      # WebPack:
-      #   img: https://7.isyangs.cn/34/65f2e488bf8ed-34.png
-      #   color: "#2e3a41"
-      # Git:
-      #   img: https://7.isyangs.cn/34/65f2e499066fa-34.png
-      #   color: "#df5b40"
+      # Lerna:
+      #   img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/Lerna.png
+      #   color: "#ffffff"
+      Nest:
+        img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/nestjs.png
+        color: "#ffffff"
+      Docker:
+        img: https://7.isyangs.cn/34/65f2e45462045-34.png
+        color: "#57b6e6"
+      WebPack:
+        img: https://7.isyangs.cn/34/65f2e488bf8ed-34.png
+        color: "#2e3a41"
+      # Gulp:
+      #   img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/gulp-logo.png
+      #   color: "#ffffff"
+      Git:
+        img: https://7.isyangs.cn/34/65f2e499066fa-34.png
+        color: "#df5b40"
 
   # 左下跳转按钮
   # Banner lower left jump button
   group:
-    # 热门: /tags/热门/ || st-fire-fill || linear-gradient(to right,#f65,#ffbf37)
-    # 教程: /tags/教程/ || st-book-mark-fill || linear-gradient(to right,#358bff,#15c6ff)
+    首页: / || st-fire-fill || linear-gradient(to right,#f65,#ffbf37)
+    文章: /archives/ || st-book-mark-fill || linear-gradient(to right,#358bff,#15c6ff)
     # 精选: /tags/精选/ || st-star-smile-fill || linear-gradient(to right,#18e7ae,#1eebeb)
 
   # 右侧置顶列表（在文章的front matter中添加“recommend: true”）
@@ -173,7 +204,7 @@ aside:
     author:
       # 头像
       # Avatar
-      img: /img/logo.png
+      img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog/avatar/di-avatar.png
       # 表情图片链接
       # Emoticon image link
       # tip: 26x26 size
@@ -183,7 +214,7 @@ aside:
     url: /about/
     # 文案1
     # label1
-    content: 分享自己对编程的<b>热爱</b>，对美好生活的<b>向往</b>，对知识海洋<b>探索历程</b>。
+    content: 分享自己对技术成长的<b>总结梳理</b>，对新事物或者爱好的<b>探索历程</b>。
     # 文案2
     # label2
     content2: 相信你可以在这里找到对你有用的知识和教程。
@@ -200,19 +231,18 @@ aside:
     # 个人信息卡片顶部按钮的切换文字
     # Switching text of the button at the top of the personal information card
     sayhello2:
-      - 🤖️ 数码科技爱好者
-      - 🔍 分享与热心帮助
-      - 🏠 智能家居小能手
-      - 🔨 设计开发一条龙
-      - 🤝 专修交互与设计
-      - 🏃 脚踏实地行动派
-      - 🧱 团队小组发动机
-      - 💢 壮汉人狠话不多
-      - 🎮 电竞游戏爱好者
+      - 💻 前端搬砖工
+      - 📷 摄影爱好者
+      - 💪 佛系健身人
+      - 🎨 绘画小能手
+      - 🏂 雪道破坏者
+      - 🎸 吉他一直落灰
+      - 🕙 倾向周密计划
+      - ✨ 独处获得能量
     # 个人信息卡片底部的小图标，按照例子填写
     information:
-    #  Github: https://github.com/efuo || st-github-line # 名称：链接 || 图标 / Name: link || icon
-    #  Bilibili: https://space.bilibili.com/1329819902 || st-bilibili-line
+      Github: https://github.com/Qxiaoqi || st-github-line # 名称：链接 || 图标 / Name: link || icon
+      # Bilibili: https://space.bilibili.com/1329819902 || st-xiaohongshu-line
 
   # 二维码
   # Official account QR code
@@ -241,14 +271,14 @@ aside:
     page: false
     # 开启后不悬停目录有模糊效果
     # After opening, there is a fuzzy effect without hovering over the directory
-    vague: true
+    vague: false
 
   # 侧边栏文章列表
   # Sidebar article list
   tags:
     # 是否显示标签
     # Whether to display tags
-    enable: false
+    enable: true
     # 显示标签数量，当高于标签总数时，显示全部标签按钮
     # Display the number of tags, when it is higher than the total number of tags, display all tags button
     limit: 20
@@ -290,7 +320,7 @@ aside:
     runtimeenable: true
     # 格式：yyyy-MM-dd hh-mm-ss
     # Format: yyyy-MM-dd hh-mm-ss
-    runtime: "2023-04-20 00:00:00"
+    runtime: "2023-03-22 00:00:00"
 
 # 页面默认设置
 # page default settings
@@ -301,7 +331,7 @@ page:
   default: # 默认值 /  Default value
     # 默认图片
     # default cover
-    cover:
+    cover: /img/default.png
       # - /img/default.png # 默认图片 / default cover
 
 # 文章页默认设置
@@ -310,11 +340,11 @@ post:
   default:
     # 文章默认图片
     # default cover
-    cover:
+    cover: /img/default.png
       # - /img/default.png # 默认图片 / default cover
     # 文章发布默认地址
     # default post locate
-    locate: 衡阳
+    locate: 北京
     # 文章默认版权
     # default post copyright
     copyright:
@@ -324,23 +354,23 @@ post:
   # 顶部文章简介
   # Top article introduction
   meta:
-    date: false # 发布日期 / Release date
+    date: true # 发布日期 / Release date
     updated: false # 更新日期 / Update date
     locate: false # 位置 / Location
-    wordcount: false # 字数 / Number of words
-    readtime: false # 访问 / uv
-    pv: false # 浏览量 / pv
-    comment: false # 评论数 / Comment count
+    wordcount: true # 字数 / Number of words
+    readtime: true # 访问 / uv
+    pv: true # 浏览量 / pv
+    comment: true # 评论数 / Comment count
   # 打赏
   # reward
   award:
-    enable: false
+    enable: true
     # 微信收款码
     # WeChat payment code
-    wechat: https://7.isyangs.cn/34/65f2e5814db1a-34.png
+    wechat: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/wechatpay.JPG
     # 支付宝收款码
     # Alipay payment code
-    alipay: https://7.isyangs.cn/34/65f2e5a6d2ef5-34.png
+    alipay: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/alipay.JPG
     # 打赏统计页面链接
     # Reward statistics page link
     url: /about
@@ -386,7 +416,7 @@ display_mode:
 # Recommended articles at the bottom of the article
 # --------------------------------------
 related_post:
-  enable: false
+  enable: true
   # 推荐文章数量
   # Number of recommended articles
   limit: 2
@@ -402,11 +432,12 @@ footer:
   # Bottom row of icons
   information:
     left: # 左侧显示图标
-    #  Github: https://github.com/efuo || st-github-line # 名称：链接 || 图标 / Name: link || icon
+      Github: https://github.com/Qxiaoqi || st-github-line # 名称：链接 || 图标 / Name: link || icon
     #  Mail: mailto:o@efu.me || st-mail-line
     right: # 右侧显示图标
+      Xiaohongshu: https://www.xiaohongshu.com/user/profile/5ffb06bf0000000001003e37 || st-xiaohongshu-line
     #  Bilibili: https://space.bilibili.com/1329819902 || st-bilibili-line
-    #  抖音: https://v.douyin.com/iJsLc8jt/ || st-douyin-fill
+      # 抖音: https://v.douyin.com/iJsLc8jt/ || st-douyin-fill
 
   # 底部导航栏
   # Bottom navigation bar
@@ -810,7 +841,7 @@ CDN:
   custom_format: https://cdn.staticfile.net/${cdnjs_name}/${version}/${min_cdnjs_file}
 
   option:
-    solitude_css: https://cdn2.codesign.qq.com/icons/7pOrz0WXB5ZWJPX/latest/iconfont.css
+    solitude_css: https://cdn2.codesign.qq.com/icons/VlZMqLVNgp6dzZq/latest/iconfont.css
     # algolia_search:
     # instantsearch:
     # pjax:
