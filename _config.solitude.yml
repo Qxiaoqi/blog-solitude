@@ -49,6 +49,10 @@ nav:
       列表: /archives/ || st-folder-fill
       分类: /categories/ || st-checkbox-multiple-blank-fill
       标签: /tags/ || st-price-tag-fill
+    我的:
+      # 装备: /equipment/ || st-laptop-line
+      # 工具箱: /tlink/ || st-tools-fill
+      音乐馆: /music/ || st-disc-fill
     关于:
       关于本站: /about/ || st-contacts-fill
     # 首页: / # 显示名称：路径 / Display name: path
@@ -60,10 +64,6 @@ nav:
     #   友链鱼塘: /moments/ || st-wifi-fill
     #   友情链接: /links/ || st-group-fill
     #   宝藏博主: javascript:travelling() || st-gift-fill
-    # 我的:
-    #   装备: /equipment/ || st-laptop-line
-    #   工具箱: /tlink/ || st-tools-fill
-    #   音乐馆: /music/ || st-disc-fill
     # 关于:
     #   关于本站: /about/ || st-contacts-fill
 
@@ -159,10 +159,10 @@ hometop:
     sup: 置顶
     # 左下角大字
     # Large text in the lower left corner
-    title: Solitude 主题文档
+    title: Capybara 翻译助手
     # 点击跳转链接
     # Click the jump link
-    url: https://solitude-docs.efu.me/
+    url: https://capybara-translate.cn/
     # 显示背景图片
     # Display background image
     img: /img/default.png
@@ -320,7 +320,7 @@ aside:
     runtimeenable: true
     # 格式：yyyy-MM-dd hh-mm-ss
     # Format: yyyy-MM-dd hh-mm-ss
-    runtime: "2023-03-22 00:00:00"
+    runtime: "2024-07-22 00:00:00"
 
 # 页面默认设置
 # page default settings
@@ -512,10 +512,10 @@ meting_api: "https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth
 # 音乐馆页
 # music page
 music:
-  enable: false
+  enable: true
   # 音乐ID：歌单ID / 专辑ID / 歌手ID
   # Music ID: playlist ID / album ID / singer ID
-  id: 1994908354
+  id: 12344278889
   # 播放列表的服务商。netease：网易云 / tencent：腾讯 / kugou：酷狗 / xiami：小米 / baidu：百度
   # Music service provider. netease: Netease Cloud / tencent: Tencent / kugou: Kugou / xiaomi: Xiaomi / baidu: Baidu
   server: netease
@@ -533,9 +533,9 @@ music:
 # capsule music
 capsule:
   enable:
-    false
+    true
     # 歌单id / playlist id
-  id: 8407304077
+  id: 12344278889
   # 播放列表的服务商。netease：网易云 / tencent：腾讯 / kugou：酷狗 / xiami：小米 / baidu：百度
   # Music service provider. netease: Netease Cloud / tencent: Tencent / kugou: Kugou / xiaomi: Xiaomi / baidu: Baidu
   server: netease
