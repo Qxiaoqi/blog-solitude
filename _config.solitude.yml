@@ -24,7 +24,7 @@ site:
     class: text
     # 具体内容 例如：solitude st-logo / Efu / /img/logo.png
     # Specific content, for example: solitude st-logo / Efu / /img/logo.png
-    custom: GrayDi
+    custom: HDi
   # 网页icon
   # Web icon
   siteIcon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog/avatar/di-avatar.png

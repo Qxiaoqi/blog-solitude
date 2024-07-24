@@ -15,7 +15,7 @@ title: 关于本站
 
 contentinfo: # 顶部个人信息展示
   sup: 你好，很高兴认识你👋
-  name: 我叫 GrayDi # 名称
+  name: 我叫 HDi # 名称
   title: 是一名前 🐧 厂，目前在 🦐 搬砖的前端开发工程师 # 介绍
   tip: 追求
   slogan: 源于<br>不断的自我驱动
@@ -173,7 +173,7 @@ likes:
     bg: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/gui-fou.png
     tips: 音乐偏好
     title: 武侠音乐、小提琴、钢琴
-    subtips: 跟 GrayDi 一起欣赏更多音乐
+    subtips: 跟 HDi 一起欣赏更多音乐
     button: true
     button_text: 更多推荐
     button_link: /music/
