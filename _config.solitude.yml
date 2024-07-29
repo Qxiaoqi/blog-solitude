@@ -52,6 +52,7 @@ nav:
     我的:
       # 装备: /equipment/ || st-laptop-line
       # 工具箱: /tlink/ || st-tools-fill
+      绘画作品: /picture/ || st-disc-fill
       音乐馆: /music/ || st-disc-fill
     关于:
       关于本站: /about/ || st-contacts-fill
