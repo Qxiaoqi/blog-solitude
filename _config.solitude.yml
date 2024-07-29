@@ -165,7 +165,7 @@ hometop:
     url: https://capybara-translate.cn/
     # 显示背景图片
     # Display background image
-    img: /img/default.png
+    img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/capybara-preview.png
     # 阴影颜色
     # Shadow color
     color: "none"
