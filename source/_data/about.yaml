@@ -9,7 +9,7 @@ authorinfo:
     - 吉他一直落灰 🎸
     - 倾向周密计划 🕙
     - 独处获得能量 ✨
-  image: 'https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog/avatar/di-avatar.png'
+  image: 'https://file-1305436646.file.myqcloud.com/blog/avatar/di-avatar.png'
 
 title: 关于本站
 
@@ -30,67 +30,67 @@ skills: # 根据需求添加
   subtitle: 立志成为五边形战士
   tags:
     - title: Chrome
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/chrome.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/chrome.png
       color: "#ffffff"
     - title: HTML
       icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/HTML.png
       color: '#e9572b'
     - title: Pug
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/pug.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/pug.png
       color: "#ffffff"
     - title: CSS
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/css.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/css.png
       color: '#ffffff'
     - title: Less
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/less.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/less.png
       color: "#1D365D"
     - title: Sass
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/sass.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/sass.png
       color: "#C66394"
     - title: Stylus
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/stylus.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/stylus.png
       color: "#ffffff"
     - title: Javascript
       icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/JS.png
       color: "#f7cb4f"
     - title: Typescript
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/typescript.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/typescript.png
       color: "#3074C0"
     - title: Vue
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/Vue.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/Vue.png
       color: '#ffffff'
     - title: React
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/React.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/React.png
       color: '#212121'
     - title: NodeJS
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/Nodejs.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/Nodejs.png
       color: "#ffffff"
     - title: Nest
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/nestjs.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/nestjs.png
       color: "#ffffff"
     - title: Webpack
       icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/webpack.png
       color: '#2e3a41'
     - title: Rollup
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/rollup.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/rollup.png
       color: '#ED3335'
     - title: Gulp
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/gulp.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/gulp.png
       color: "#CF4647"
     - title: ESBuild
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/esbuild.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/esbuild.png
       color: "#000000"
     - title: SWC
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/swc-seeklogo.svg
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/swc-seeklogo.svg
       color: '#ffffff'
     - title: Lerna
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/lerna.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/lerna.png
       color: "#000000"
     - title: Rush
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/rush.svg
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/rush.svg
       color: "#ffffff"
     - title: NPM
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/npm.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/npm.png
       color: "#ffffff"
     - title: Git
       icon: https://npm.elemecdn.com/wleelw-blog-abs@1.0.0/img/icon/git.png
@@ -99,13 +99,13 @@ skills: # 根据需求添加
       icon: https://7.isyangs.cn/34/65f2e45462045-34.png
       color: '#57b6e6'
     - title: Jenkins
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/jenkins.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/jenkins.png
       color: '#ffffff'
     - title: TypeORM
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/typeorm-seeklogo.svg
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/typeorm-seeklogo.svg
       color: '#ffffff'
     - title: Rust
-      icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/rust.png
+      icon: https://file-1305436646.file.myqcloud.com/tech-logo/rust.png
       color: '#000000'
 
 careers:
@@ -121,19 +121,19 @@ careers:
     - school: 'Shopee'
       major: 'Eng Infra / 至今'
       color: '#357ef5'
-  image: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/timeline.png
+  image: https://file-1305436646.file.myqcloud.com/blog-icon/timeline.png
 
 personalities:
   tips: '性格'
   title: '物流师'
   color: '#56a178'
   type: 'ISTJ-A'
-  image: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/ISTJ.svg
+  image: https://file-1305436646.file.myqcloud.com/blog-icon/ISTJ.svg
   link: 'https://www.16personalities.com/'
   linkText: '16personalities'
   typeLink: 'https://www.16personalities.com/ch/istj-%E4%BA%BA%E6%A0%BC'
   typeName: '物流师'
-  myphoto: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/person-photo.jpeg
+  myphoto: https://file-1305436646.file.myqcloud.com/blog-icon/person-photo.jpeg
 
 motto:
   title: 座右铭
@@ -148,7 +148,7 @@ expertise:
 
 game1:
   title: '爱好游戏'
-  img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/he-luo-qun-xia-zhuan.jpg
+  img: https://file-1305436646.file.myqcloud.com/blog-icon/he-luo-qun-xia-zhuan.jpg
   subtitle: 河洛群侠传
   icon: 'fas fa-dice-d20'
   tips_left: 河洛工作室
@@ -157,7 +157,7 @@ game1:
 
 game2:
   title: '爱好游戏'
-  img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/xia-ke-feng-yun-zhuan-qian-zhuan.jpg
+  img: https://file-1305436646.file.myqcloud.com/blog-icon/xia-ke-feng-yun-zhuan-qian-zhuan.jpg
   icon: 'fas fa-gamepad'
   subtitle: '侠客风云传'
   tips_left: 河洛工作室
@@ -165,12 +165,12 @@ game2:
 
 likes:
   - type: like-technology
-    bg: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/nv-shen-yi-wen-lu.jpeg
+    bg: https://file-1305436646.file.myqcloud.com/blog-icon/nv-shen-yi-wen-lu.jpeg
     tips: 关注偏好
     title: 绘画
     subtips: 板绘、油画、水彩
   - type: like-music
-    bg: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/gui-fou.png
+    bg: https://file-1305436646.file.myqcloud.com/blog-icon/gui-fou.png
     tips: 音乐偏好
     title: 武侠音乐、小提琴、钢琴
     subtips: 跟 HDi 一起欣赏更多音乐
@@ -189,8 +189,8 @@ oneself: # 按需填写
   major: 'Shopee' # 专业
   occupation: '前端开发' # 职位
   map: # 你所在位置的地图
-    light: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/beijing-map.png # 白天
-    dark: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/beijing-map.png # 夜晚
+    light: https://file-1305436646.file.myqcloud.com/blog-icon/beijing-map.png # 白天
+    dark: https://file-1305436646.file.myqcloud.com/blog-icon/beijing-map.png # 夜晚
 
 #自定义
 cause:

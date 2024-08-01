@@ -39,5 +39,5 @@ type: photo
 <div class="gallery-group-main">
 {% galleryGroup '798' '北京' '/photo/798' https://file-1305436646.file.myqcloud.com/blog/photo/3/DSCF2117.webp %}
 {% galleryGroup '环球影城' '北京' '/photo/环球影城' https://file-1305436646.file.myqcloud.com/blog/photo/2/DSCF1792.webp %}
-{% galleryGroup '南锣鼓巷' '北京' '/photo/南锣鼓巷' https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog/photo/1/DSCF1650.webp %}
+{% galleryGroup '南锣鼓巷' '北京' '/photo/南锣鼓巷' https://file-1305436646.file.myqcloud.com/blog/photo/1/DSCF1650.webp %}
 </div>

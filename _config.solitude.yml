@@ -15,8 +15,8 @@ site:
   name:
     class: text # text / i_class / img
     custom: HDi # Solitude / fas fa-ghost / /img/pwa/favicon.ico
-  siteIcon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog/avatar/di-avatar.png
-  icon: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog/avatar/di-avatar.png
+  siteIcon: https://file-1305436646.file.myqcloud.com/blog/avatar/di-avatar.png
+  icon: https://file-1305436646.file.myqcloud.com/blog/avatar/di-avatar.png
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
@@ -69,28 +69,28 @@ hometop:
     url: 最初可能只是一个技术博客
     icon:
       Vue:
-        img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/Vue.png
+        img: https://file-1305436646.file.myqcloud.com/tech-logo/Vue.png
         color: "#ffffff"
       React:
-        img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/React.png
+        img: https://file-1305436646.file.myqcloud.com/tech-logo/React.png
         color: "#212121"
       HTML: # 名字 / Name
         img: https://7.isyangs.cn/34/65f2e42921677-34.png # 图片 / Image
         color: "#e9572b" # 背景色 / Background color
       CSS:
-        img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/css.png
+        img: https://file-1305436646.file.myqcloud.com/tech-logo/css.png
         color: "#ffffff"
       Less:
-        img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/less.png
+        img: https://file-1305436646.file.myqcloud.com/tech-logo/less.png
         color: "#1D365D"
       JS:
         img: https://7.isyangs.cn/34/65f2e43ceddda-34.png
         color: "#f7cb4f"
       TS:
-        img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/typescript.png
+        img: https://file-1305436646.file.myqcloud.com/tech-logo/typescript.png
         color: "#3074C0"
       Nest:
-        img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/tech-logo/nestjs.png
+        img: https://file-1305436646.file.myqcloud.com/tech-logo/nestjs.png
         color: "#ffffff"
       Docker:
         img: https://7.isyangs.cn/34/65f2e45462045-34.png
@@ -111,7 +111,7 @@ hometop:
     sup: 置顶
     title: Capybara 翻译助手
     url: https://capybara-translate.cn/
-    img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/capybara-preview.png
+    img: https://file-1305436646.file.myqcloud.com/blog-icon/capybara-preview.png
     color: "none"
 carousel: false
 # --------------------------- end ---------------------------
@@ -135,7 +135,7 @@ aside:
   card:
     style: 0 # 0: default 1: style 1 2: style 2
     author:
-      img: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog/avatar/di-avatar.png
+      img: https://file-1305436646.file.myqcloud.com/blog/avatar/di-avatar.png
       sticker: https://7.isyangs.cn/34/65f2e4e0423cc-34.png
     url: /about/ # Click name to jump to address 
     background: # https://s3.qjqq.cn/47/663af296b85f4.webp!color # Background image(Invalid if style is 0)
@@ -268,11 +268,11 @@ post:
     desc: 因为你的支持，我感受到写文章的价值。
     list:
       - name: wechat
-        qcode: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/wechatpay.JPG
+        qcode: https://file-1305436646.file.myqcloud.com/blog-icon/wechatpay.JPG
         # url: https://github.com/sponsors/everfu
         color: var(--efu-black)
       - name: alipay
-        qcode: https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog-icon/alipay.JPG
+        qcode: https://file-1305436646.file.myqcloud.com/blog-icon/alipay.JPG
         # url: https://github.com/sponsors/everfu
         color: var(--efu-black)
   share: # Share icon
@@ -459,7 +459,7 @@ copy:
 # --------------------------- start ---------------------------
 # Lazyload
 lazyload:
-  enable: true
+  enable: false
   field: post # post, site
   placeholder: /img/loading.avif
   errorimg: /img/error_load.avif

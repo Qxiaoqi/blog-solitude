@@ -7,6 +7,6 @@ type: picture
 ## 油画作品集
 
 {% gallery %}
-![](https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog/picture/oil-painting/little-girl.jpg)
-![](https://file-1305436646.cos.ap-nanjing.myqcloud.com/blog/picture/oil-painting/landscape.jpg)
+![](https://file-1305436646.file.myqcloud.com/blog/picture/oil-painting/little-girl.jpg)
+![](https://file-1305436646.file.myqcloud.com/blog/picture/oil-painting/landscape.jpg)
 {% endgallery %}
