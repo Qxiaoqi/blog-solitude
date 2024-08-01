@@ -32,6 +32,7 @@ nav:
       标签: /tags/ || fas fa-tags
     我的:
       绘画作品: /picture/ || fas fa-image
+      摄影作品: /photo/ || fas fa-camera
       音乐馆: /music/ || fas fa-music
     关于:
       关于本站: /about/ || fas fa-address-card
@@ -458,8 +459,8 @@ copy:
 # --------------------------- start ---------------------------
 # Lazyload
 lazyload:
-  enable: false
-  field: site # post, site
+  enable: true
+  field: post # post, site
   placeholder: /img/loading.avif
   errorimg: /img/error_load.avif
 # --------------------------- end ---------------------------
