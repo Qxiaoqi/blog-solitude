@@ -22,8 +22,8 @@ site:
 # --------------------------- start ---------------------------
 nav:
   group:
-  #  project: # name
-  #    Solitude: https://github.com/everfu/hexo-theme-solitude || /img/pwa/favicon.ico # name: url || icon
+   项目: # name
+     Capybara: https://capybara-translate.cn/ || https://file-1305436646.file.myqcloud.com/blog-icon/capybara-logo.png # name: url || icon
   menu:
     首页: /
     文章:
