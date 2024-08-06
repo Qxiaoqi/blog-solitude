@@ -7,7 +7,7 @@ categories:
 tags: 
 - JavaScript
 - jQuery
-cover: https://iph.href.lu/500x250
+cover: https://file-1305436646.file.myqcloud.com/blog/banner/gui-dang.webp
 ---
 
 说到这个jQ库，我之前一直搞错一个概念，以为jQ是一个框架，但是查了一些资料后呢，发现它原来是个库。那么它们的区别是什么呢，本质区别在于控制反转。那么通俗点讲，库是一个封装好的集合，控制权在使用者。而框架是一个架构，向用户提供解决方案，控制权在框架。

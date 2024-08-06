@@ -8,7 +8,7 @@ tags:
 - 项目
 - Express
 - MySQL
-cover: https://iph.href.lu/500x250
+cover: https://file-1305436646.file.myqcloud.com/blog/banner/gui-dang.webp
 
 ---
 

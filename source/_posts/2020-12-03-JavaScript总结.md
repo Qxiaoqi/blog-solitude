@@ -6,7 +6,7 @@ categories:
   - 面试整理
 tags:
   - JavaScript
-cover: https://iph.href.lu/500x250
+cover: https://file-1305436646.file.myqcloud.com/blog/banner/gui-dang.webp
 ---
 
 # JavaScript 总结
