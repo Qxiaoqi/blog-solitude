@@ -179,7 +179,8 @@ likes:
     button_link: /music/
 
 tj: # 统计
-  url: https://v6-widget.51.la/v6/3JHKrifUs3FzzTaj/quote.js # 需要到51la官网注册自行获取
+  provider: baidu
+  url: #https://v6-widget.51.la/v6/3JHKrifUs3FzzTaj/quote.js # 需要到51la官网注册自行获取
   img: https://7.isyangs.cn/1/65eb2e9109826-1.png # 背景
 
 oneself: # 按需填写
