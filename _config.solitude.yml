@@ -21,9 +21,9 @@ site:
 
 # --------------------------- start ---------------------------
 nav:
-  group:
-   项目: # name
-     Capybara: https://capybara-translate.cn/ || https://file-1305436646.file.myqcloud.com/blog-icon/capybara-logo.png # name: url || icon
+  # group:
+  #   project:
+  #     Capybara: https://capybara-translate.cn/ || https://file-1305436646.file.myqcloud.com/blog-icon/capybara-logo.png # name: url || icon
   menu:
     首页: /
     文章:
