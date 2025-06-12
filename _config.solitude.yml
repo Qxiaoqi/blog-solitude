@@ -208,8 +208,8 @@ aside:
   siteinfo:
     postcount: true # Number of articles
     wordcount: true # Total number of words
-    pv: true # PV
-    uv: true # UV
+    pv: false # PV
+    uv: false # UV
     updatetime: true # Last update date
     runtimeenable: true # Website creation time 
     runtime: "2024-07-22 00:00:00"
@@ -647,15 +647,7 @@ font:
 extends:
   head:
     # Insert in head
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?9acbd03aa7da5019a56d75aeaeb8819d";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="74f224fa-d3eb-4426-be2a-a67cbb900e1c"></script>
     #  - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
   body:
   # Insert in body
@@ -760,7 +752,7 @@ CDN:
   custom_format: //open.lightxi.com/cdnjs/ajax/libs/${cdnjs_name}/${version}/${min_cdnjs_file} # Custom format
   # Directly override the default CDN link (highest priority)
   option:
-    busuanzi_qj_js: https://pv.lemonso.com/js
+    # busuanzi_qj_js: https://pv.lemonso.com/js
     # solitude_css: https://cdn2.codesign.qq.com/icons/VlZMqLVNgp6dzZq/latest/iconfont.css
     # algolia_search:
     # instantsearch:
