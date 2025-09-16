@@ -110,7 +110,7 @@ hometop:
   recommendList:
     sup: 置顶
     title: Capybara 翻译助手
-    url: https://capybara-translate.cn/
+    url: https://capybara-doc-ochre.vercel.app/docs/intro
     img: https://file-1305436646.file.myqcloud.com/blog-icon/capybara-preview.png
     color: "none"
 carousel: false
