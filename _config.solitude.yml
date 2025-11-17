@@ -75,7 +75,7 @@ hometop:
         img: https://file-1305436646.file.myqcloud.com/tech-logo/React.png
         color: "#212121"
       HTML: # 名字 / Name
-        img: https://7.isyangs.cn/34/65f2e42921677-34.png # 图片 / Image
+        img: https://file-1305436646.file.myqcloud.com/tech-logo/html.png # 图片 / Image
         color: "#e9572b" # 背景色 / Background color
       CSS:
         img: https://file-1305436646.file.myqcloud.com/tech-logo/css.png
@@ -84,7 +84,7 @@ hometop:
         img: https://file-1305436646.file.myqcloud.com/tech-logo/less.png
         color: "#1D365D"
       JS:
-        img: https://7.isyangs.cn/34/65f2e43ceddda-34.png
+        img: https://file-1305436646.file.myqcloud.com/tech-logo/js.png
         color: "#f7cb4f"
       TS:
         img: https://file-1305436646.file.myqcloud.com/tech-logo/typescript.png
@@ -93,13 +93,13 @@ hometop:
         img: https://file-1305436646.file.myqcloud.com/tech-logo/nestjs.png
         color: "#ffffff"
       Docker:
-        img: https://7.isyangs.cn/34/65f2e45462045-34.png
+        img: https://file-1305436646.file.myqcloud.com/tech-logo/docker.png
         color: "#57b6e6"
       WebPack:
-        img: https://7.isyangs.cn/34/65f2e488bf8ed-34.png
+        img: https://file-1305436646.file.myqcloud.com/tech-logo/Webpack.png
         color: "#2e3a41"
       Git:
-        img: https://7.isyangs.cn/34/65f2e499066fa-34.png
+        img: https://file-1305436646.file.myqcloud.com/tech-logo/git.png
         color: "#df5b40"
   group:
     首页: / || fas fa-fire || linear-gradient(to right,#f65,#ffbf37)
@@ -136,7 +136,7 @@ aside:
     style: 0 # 0: default 1: style 1 2: style 2
     author:
       img: https://file-1305436646.file.myqcloud.com/blog/avatar/di-avatar.png
-      sticker: https://7.isyangs.cn/34/65f2e4e0423cc-34.png
+      sticker: https://file-1305436646.file.myqcloud.com/blog-icon/EMOJI-44.png
     url: /about/ # Click name to jump to address 
     background: # https://s3.qjqq.cn/47/663af296b85f4.webp!color # Background image(Invalid if style is 0)
     content: 分享自己对技术成长的<b>总结梳理</b>，对新事物或者爱好的<b>探索历程</b>。
