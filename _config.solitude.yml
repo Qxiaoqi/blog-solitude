@@ -493,7 +493,7 @@ mediumZoom: false # mediumZoom
 
 # --------------------------- start ---------------------------
 # Mermaid
-mermaid: false
+mermaid: true
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
@@ -651,6 +651,68 @@ extends:
     #  - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
   body:
   # Insert in body
+    - |
+      <script>
+        (function() {
+          function getMermaidConfig(mode) {
+            var isDark = mode === 'dark';
+            return {
+              startOnLoad: false,
+              theme: 'base',
+              themeVariables: {
+                fontFamily: '"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif',
+                fontSize: '14px',
+                /* Persona 配色基础变量 — 具体颜色由 CSS 按形状覆盖 */
+                primaryColor:       '#E30B20',
+                primaryBorderColor: '#000000',
+                primaryTextColor:   '#ffffff',
+                secondaryColor:     '#FFD700',
+                secondaryBorderColor:'#000000',
+                secondaryTextColor: '#000000',
+                tertiaryColor:      '#FF8C00',
+                tertiaryBorderColor:'#000000',
+                tertiaryTextColor:  '#000000',
+                lineColor:          '#000000',
+                textColor:          '#000000',
+                nodeBorder:         '#000000',
+                clusterBkg:         isDark ? '#2a2a2a' : '#fff8dc',
+                clusterBorder:      '#000000',
+                edgeLabelBackground:'transparent',
+                /* Sequence diagram */
+                actorBkg:           '#E30B20',
+                actorBorder:        '#000000',
+                actorTextColor:     '#ffffff',
+                actorLineColor:     '#000000',
+                signalColor:        '#000000',
+                signalTextColor:    '#000000',
+                labelBoxBkgColor:   '#FFD700',
+                labelBoxBorderColor:'#000000',
+                labelTextColor:     '#000000',
+                loopTextColor:      '#000000',
+                noteBkgColor:       '#FFD700',
+                noteBorderColor:    '#000000',
+                noteTextColor:      '#000000',
+                activationBkgColor: '#FF8C00',
+                activationBorderColor:'#000000',
+                sequenceNumberColor:'#ffffff',
+                background:         isDark ? '#1a1a1a' : '#ffffff'
+              }
+            };
+          }
+          var initMode = document.documentElement.getAttribute('data-theme') || 'light';
+          mermaid.initialize(getMermaidConfig(initMode));
+          /* Register theme change hook for dark/light toggle */
+          window.globalFn = window.globalFn || {};
+          window.globalFn.themeChange = window.globalFn.themeChange || {};
+          window.globalFn.themeChange.mermaid = function(mode) {
+            mermaid.initialize(getMermaidConfig(mode));
+            document.querySelectorAll('.mermaid[data-processed]').forEach(function(el) {
+              el.removeAttribute('data-processed');
+            });
+            mermaid.run();
+          };
+        })();
+      </script>
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
