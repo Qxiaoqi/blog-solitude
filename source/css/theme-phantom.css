@@ -955,6 +955,48 @@ html[data-ui-preset="phantom"] #theme-preset-switcher.is-in-nav .theme-switcher-
 }
 
 @media (max-width: 768px) {
+  html[data-ui-preset="phantom"] .post #page-header.post-bg {
+    height: min(26rem, 72vh);
+    overflow: hidden;
+  }
+
+  html[data-ui-preset="phantom"] .post #page-header.post-bg::before {
+    height: min(26rem, 72vh);
+    background:
+      linear-gradient(142deg, rgba(231, 29, 43, 0.82) 0 26%, rgba(9, 9, 9, 0.46) 26% 48%, rgba(9, 9, 9, 0.08) 48%),
+      radial-gradient(circle at 12% 24%, rgba(255, 255, 255, 0.12) 0 1.5px, transparent 1.5px) 0 0 / 18px 18px,
+      linear-gradient(180deg, rgba(9, 9, 9, 0.06), rgba(9, 9, 9, 0.46));
+  }
+
+  html[data-ui-preset="phantom"] .post .coverdiv {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    margin: 0;
+    transform: none;
+    height: min(26rem, 72vh);
+    filter: blur(0) saturate(1.08) contrast(1.04);
+  }
+
+  html[data-ui-preset="phantom"] .post .coverdiv::after {
+    box-shadow: inset 0 -120px 120px -72px rgba(9, 9, 9, 0.68);
+  }
+
+  html[data-ui-preset="phantom"] .post #post-cover {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    opacity: 0.96;
+    object-position: center 24%;
+  }
+
+  html[data-ui-preset="phantom"] .post #post-info {
+    padding-top: 13.5rem;
+    padding-bottom: 1.2rem;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
   html[data-ui-preset="phantom"] #about-page .myInfoAndSayHello > * {
     max-width: 100%;
   }
@@ -1044,14 +1086,39 @@ html[data-ui-preset="phantom"] #theme-preset-switcher.is-in-nav .theme-switcher-
 
   html[data-ui-preset="phantom"] .post #post-info .post-title {
     display: block;
-    max-width: 100%;
-    padding-right: 1.7rem;
-    margin-right: 0.8rem;
+    max-width: calc(100% - 0.6rem);
+    padding: 0.5rem 1.45rem 0.55rem 0.8rem;
+    margin: 0 0 0.55rem;
+    font-size: 1.32rem;
+    line-height: 1.15;
+    text-align: left;
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.72);
   }
 
   html[data-ui-preset="phantom"] .post #post-info .post-title::after {
-    right: -0.8rem;
-    width: 1.5rem;
+    right: -0.9rem;
+    width: 1.7rem;
+  }
+
+  html[data-ui-preset="phantom"] .post #post-meta {
+    width: fit-content;
+    max-width: calc(100% - 1.25rem);
+    margin-top: 0;
+    padding: 0.45rem 0.7rem;
+    border-left-width: 5px;
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.26);
+  }
+
+  html[data-ui-preset="phantom"] .post #post-meta .meta-secondline {
+    justify-content: flex-start;
+  }
+
+  html[data-ui-preset="phantom"] .post #post-meta .meta-secondline > span {
+    margin: 0.15rem 0.5rem 0.15rem 0;
+  }
+
+  html[data-ui-preset="phantom"] .post #post-meta .meta-secondline > span:first-child {
+    margin-left: 0;
   }
 
   html[data-ui-preset="phantom"] #article-container h2,
