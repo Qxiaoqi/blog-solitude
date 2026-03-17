@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plain Tech Writing"
+  short_description: "Rewrite technical prose in plain language"
+  default_prompt: "Use $tech-writing-plain-language to revise this technical draft into plain, concrete language without 黑话 or empty abstractions."

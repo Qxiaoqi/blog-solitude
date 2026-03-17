@@ -707,9 +707,14 @@ extends:
           window.globalFn.themeChange.mermaid = function(mode) {
             mermaid.initialize(getMermaidConfig(mode));
             document.querySelectorAll('.mermaid[data-processed]').forEach(function(el) {
+              el.removeAttribute('data-mermaid-enhanced');
               el.removeAttribute('data-processed');
             });
-            mermaid.run();
+            Promise.resolve(mermaid.run()).then(function() {
+              window.requestAnimationFrame(function() {
+                window.initMermaidViewer && window.initMermaidViewer();
+              });
+            });
           };
         })();
       </script>
