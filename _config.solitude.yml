@@ -411,7 +411,7 @@ envelope:
 # can only use NetEase Cloud Music, QQ Music and other music platforms supported by the mainland China region, 
 # the subsequent consideration of the use of JSON files to store music information and customize the implementation of the third-party API does not depend on the.
 # Music Page
-meting_api: "https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r" # Custom API
+meting_api: "https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r" # Custom API
 music:
   enable: true
   id: 12344278889
@@ -647,13 +647,59 @@ font:
 extends:
   head:
     # Insert in head
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="74f224fa-d3eb-4426-be2a-a67cbb900e1c"></script>
-    #  - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
-  body:
-  # Insert in body
+    - <script defer src="https://cloud.umami.is/script.js" data-website-id="74f224fa-d3eb-4426-be2a-a67cbb900e1c"></script>
     - |
       <script>
         (function() {
+          try {
+            var preset = localStorage.getItem('theme-preset');
+            var html = document.documentElement;
+            if (preset === 'light' || preset === 'dark' || preset === 'phantom') {
+              var theme = preset === 'light' ? 'light' : 'dark';
+              html.setAttribute('data-theme', theme);
+              html.setAttribute('data-ui-preset', preset === 'phantom' ? 'phantom' : 'default');
+              localStorage.setItem('theme', JSON.stringify({
+                value: theme,
+                expiry: Date.now() + 31536000000
+              }));
+            } else {
+              html.setAttribute('data-ui-preset', 'default');
+            }
+          } catch (error) {
+            document.documentElement.setAttribute('data-ui-preset', 'default');
+          }
+        })();
+      </script>
+    - <link rel="stylesheet" href="/css/theme-phantom.css">
+    #  - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
+  body:
+  # Insert in body
+    - <script defer pjax src="https://cdnjs.cloudflare.com/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.js"></script>
+    - |
+      <script>
+        (function() {
+          function cacheMermaidSource(root) {
+            (root || document).querySelectorAll('.mermaid').forEach(function(el) {
+              if (el.dataset.mermaidSource) return;
+              var source = (el.textContent || '').trim();
+              if (source) {
+                el.dataset.mermaidSource = source;
+              }
+            });
+          }
+
+          function restoreMermaidSource(root) {
+            (root || document).querySelectorAll('.mermaid').forEach(function(el) {
+              var source = el.dataset.mermaidSource;
+              if (!source) return;
+              if (el.hasAttribute('data-processed') || el.dataset.mermaidEnhanced === 'true') {
+                el.textContent = source;
+              }
+              el.removeAttribute('data-mermaid-enhanced');
+              el.removeAttribute('data-processed');
+            });
+          }
+
           function getMermaidConfig(mode) {
             var isDark = mode === 'dark';
             return {
@@ -701,15 +747,21 @@ extends:
           }
           var initMode = document.documentElement.getAttribute('data-theme') || 'light';
           mermaid.initialize(getMermaidConfig(initMode));
+          cacheMermaidSource(document);
+          if (!window.__mermaidRunWrapped) {
+            var originalRun = mermaid.run.bind(mermaid);
+            mermaid.run = function() {
+              cacheMermaidSource(document);
+              return originalRun.apply(mermaid, arguments);
+            };
+            window.__mermaidRunWrapped = true;
+          }
           /* Register theme change hook for dark/light toggle */
           window.globalFn = window.globalFn || {};
           window.globalFn.themeChange = window.globalFn.themeChange || {};
           window.globalFn.themeChange.mermaid = function(mode) {
             mermaid.initialize(getMermaidConfig(mode));
-            document.querySelectorAll('.mermaid[data-processed]').forEach(function(el) {
-              el.removeAttribute('data-mermaid-enhanced');
-              el.removeAttribute('data-processed');
-            });
+            restoreMermaidSource(document);
             Promise.resolve(mermaid.run()).then(function() {
               window.requestAnimationFrame(function() {
                 window.initMermaidViewer && window.initMermaidViewer();
@@ -718,6 +770,7 @@ extends:
           };
         })();
       </script>
+    - <script defer src="/js/theme-preset.js"></script>
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------

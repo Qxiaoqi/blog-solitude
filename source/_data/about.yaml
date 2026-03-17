@@ -16,7 +16,7 @@ title: 关于本站
 contentinfo: # 顶部个人信息展示
   sup: 你好，很高兴认识你👋
   name: 我叫 HDi # 名称
-  title: 是一名前 🐧 厂，目前在 🦐 搬砖的前端开发工程师 # 介绍
+  title: 是一名前 🐧 厂，🦐 厂，目前在 🐦 搬砖的开发工程师 # 介绍
   tip: 追求
   slogan: 源于<br>不断的自我驱动
   mask:
@@ -119,7 +119,10 @@ careers:
       major: '微信事业群 / 2021'
       color: '#357ef5'
     - school: 'Shopee'
-      major: 'Eng Infra / 至今'
+      major: 'Eng Infra / 2025'
+      color: '#357ef5'
+    - school: 'XPENG'
+      major: 'AI Infra / 至今'
       color: '#357ef5'
   image: https://file-1305436646.file.myqcloud.com/blog-icon/timeline.png
 
@@ -187,8 +190,8 @@ oneself: # 按需填写
   location: '中国，北京' # 所在位置
   birthYear: '1997' # 生日
   university: '所在公司' # 毕业学校
-  major: 'Shopee' # 专业
-  occupation: '前端开发' # 职位
+  major: 'XPENG' # 专业
+  occupation: '开发工程师' # 职位
   map: # 你所在位置的地图
     light: https://file-1305436646.file.myqcloud.com/blog-icon/beijing-map.png # 白天
     dark: https://file-1305436646.file.myqcloud.com/blog-icon/beijing-map.png # 夜晚
