@@ -1,5 +1,6 @@
 (() => {
   const STORAGE_KEY = "theme-preset";
+  const DEFAULT_PRESET = "phantom";
   const PRESETS = {
     light: {
       theme: "light",
@@ -26,8 +27,12 @@
   const getCurrentPreset = () => {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored && PRESETS[stored]) return stored;
+    const currentUiPreset = root.getAttribute("data-ui-preset");
+    if (currentUiPreset === "phantom") return "phantom";
     const currentTheme = root.getAttribute("data-theme");
-    return currentTheme === "dark" ? "dark" : "light";
+    if (currentTheme === "dark") return "dark";
+    if (currentTheme === "light") return "light";
+    return DEFAULT_PRESET;
   };
 
   const writeThemeCache = theme => {
