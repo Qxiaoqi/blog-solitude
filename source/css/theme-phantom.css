@@ -696,6 +696,19 @@ html[data-ui-preset="phantom"] #article-container code:not(pre code) {
   padding: 0.08rem 0.36rem;
 }
 
+#article-container .mermaid-preview {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#article-container .mermaid-preview > svg {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: clamp(18rem, 52vh, 30rem) !important;
+}
+
 html[data-ui-preset="phantom"] .mermaid {
   background:
     radial-gradient(circle at 12% 14%, rgba(0, 0, 0, 0.08) 0 2px, transparent 2px) 0 0 / 16px 16px,
